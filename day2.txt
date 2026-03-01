@@ -1,0 +1,283 @@
+24-02-26
+
+inbuilt function:
+->id()   //memory allocation 
+give 
+memory address for value and the address stored for variable
+->len()  //length 
+->type()  //data type
+->abs()  //gives +ve value
+->round() 
+round(2.4)
+2
+round(40.3456,3) -> round 
+40.346
+*exceptional case :
+round(2.5)
+2 //for .5 gives ans to nearest even number
+round(3.5)
+4
+-> max() // gives l;argest number
+-> min() //gives smallest value
+-> sum () // adds up the value
+ condition for sum () , if u pass directly value it will not work u have to pass in collection data type
+sum(1,2)
+Traceback (most recent call last):
+  File "<pyshell#63>", line 1, in <module>
+    sum(1,2)
+TypeError: 'int' object is not iterable
+sum([1,2])
+3
+
+garbage collector
+
+data types:
+based on size of value data types are categeroised into 2:-
+1. single value / individual data type
+    |-> integer
+	 (-infinite to +infinity including zero excluding decimal points) 
+	(standard representation : int)
+	default value of integer is 0	   
+    |-> float 
+	(-infinite to +infinity including zero and decimal points)
+	(standard representation : float)
+	default value of float is 0.0
+a=.4
+a
+0.4
+a=6.
+a
+6.0
+a=.
+SyntaxError: invalid syntax
+NOTE : THAT MEANS IT IS ESSENTIAL TO GIVE MIN ONE VALUE BEFORE OR AFTER DECINMAL 
+
+    |-> complex (combination of real and img. number)
+	a+bj or a-bj (j can be lowercase or uppercase . python accepts both but treats as lowercase j and convert it to lowercase j is uppercase is provided)
+a=9j
+a
+9j  // if only imganiary it do not give in paranthesis
+a=2+2j
+a
+(2+2j)  // if has both give in paranthesis
+	standard repesentation :complex
+	default value : 0j
+    |-> boolean(True or False)
+	standard representation :bool
+	default value : False
+
+2. multivalued data type / collection data type 
+these does not store in single value block but in memory layer
+this memory layer has no. of blocks exact equal to length stored in it
+
+
+
+eg aksh'h
+|'a'|'k'|'s'|'h'|"'"|'h'| 
+this whole is memory layer and has a single address
+this has subaddress which is indexing 
+
+	|->string
+	store characters . characters can be 'a'-'z' , 'A'-'Z' , 0-9 , space , any special character
+	enclosed between pair of single / double / triple quotes
+	standard representation : str
+	default value:'' //empty quotes
+	triple quptes are used for multiline string
+in python file triple quotes can also be used to comment out multi lines
+	IMMUTABLE DATATYPES
+	unordered collection
+ 
+	|->list
+ 
+	|->tuple
+	|->set
+	|->dictionary
+	
+
+
+indexing :
+indexes are sub-addresses given to each and every memory block of a collection datatype
+2 types of indexing 
+-> positive indexing (left to right , 0 to len(coll.)-1)
+-> negative indexing (right to left , -1 to -len(coll.))
+syntax: variable_name[index]
+
+note : python interpreter does not understand negative indexing it uses the formaula 
+(len+negative index value) to convert to positive indexing then passes positive indexing .
+
+
+-> index inbuilt method : to get index of a char
+var.index('char')
+gives first char index for repeated char 
+start=var.index('char')
+->var.index('char',start+1)
+a='''hi my name is akshita'''
+a.index('a')
+7
+a.index('a',8)
+14
+a.index('a',7)
+7
+
+-> count() inbuilt method : count the occurance of char
+var.count(char')
+l
+
+->directory function can be used to get all method present in any collection 
+dir(str)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+method with __ are by developer and are not useful for us.these are magic methods or dunder methods 
+
+HW - UPEERCASE , LOWERCASE , ISUPPER , ISLOWER ,SWAP , ISDIGIT , ISALPHA , 
+
+==> LIST
+store >1 value at a time 
+contains homogeneous and heterogeneous
+INCLOSED B/W []
+mutable 
+syntax:
+l=[l1,l2,l3,....ln]
+standard representation - list
+default value - []
+can have duplicate values
+ordered collection 
+l=[100,200,'hi','heloo',False]
+	|
+	|  |100|200|0x7|0x9|False|  -> main memory layer
+	|	
+	|          |'h'|'i'|->o*7
+			|'h'|'e'|'l'|'o'|'o'|->ox9
+
+append () method ->
+add an element at last 
+syntax- var.append(var/value)
+
+insert () method->
+add an element at a position
+syntax : var.insert(position, value)
+
+pop() method->
+removes last element or desired element via index
+syntax: var.pop() or var.pop(index)
+
+remove() method:
+removes the desired element via value
+syntax: var.remove(val)
+
+'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
+
+
+
+=====>>>> tuple
+homogeneous + heterogeneous 
+immutable data type
+allows duplicate value 
+ordered 
+syntax: var=(v1,v2,v3,...vn)
+or
+var=v1,v2,v3,....,vn
+python interpreter will put all theses values in ()
+standard representation :tuple
+default value :()
+
+if we want to add a single element in tuple then we have to add , after element
+v=(1)
+type(v)
+<class 'int'>
+v=(1,)
+type(v)
+<class 'tuple'>
+ memory management is same as list 
+difference between tuple and list
+1. () and []
+2. tuple is immutable and list is mutable
+3. if we pass one element in tuple and do not add , its type will be of datatype of element not tuple
+  if we pass one element in list then its type will be list only
+
+2 methods :
+count() , index()
+
+
+====>>> set
+unordered 
+set is mutable but its element should be immutable like int , float , bool , complex , tuple and string 
+no duplicate value 
+no indexing
+enclosed in {}
+syntax : var={v1 ,v2,...,vn}
+standard representation : set
+default value :set()
+
+memory management is similar to list and tuple but the main memory layer is circular memoery space and has blocks equal to its length
+
+add method:
+to add new value
+
+pop() method:
+to remove first element passed
+
+NOTEl: IT IS UNORDERED BUT AFTER  GETTING STORE ITS ORDER IS SAME ALL THE TIME 
+
+remove () method:
+by value it remove 
+
+hw-> update()
+
+
+
+=====>>>>dictionary
+collection of key value pair enclosed b/w {} 
+{key:value}
+no indexing
+dictionary is  mutable
+unordered
+key must be unique and is immutable type
+standard representation : dict
+default value : {}
+syntax :  var ={ key1:value1 , k1:k2 , ...,kn:vn}
+
+composite key : when tuple becomes key then that key is coposite 
+values can be of any datatype 
+values are always considered as hidden layer in dictionary
+values can be accessed using its key
+
+memory allocation
+
+d={1:'hi',2:40,'age':21}
+ 2 memory layer will be creatred here
+
+	|   2 memory space
+	|	keylayer  value layer
+	|	|1	|ox2	|		|'h'|'i'|->ox2
+	|	|2	|40	|
+	|	|'age'	|21	|
+	|	
+	|
+in keylayer single value and multilayer both store in single block but this is not same for value layer
+
+d={1:'hi',2:40,'age':21}
+d.get(1)
+'hi'
+d['age']
+21
+d[1]=2  //update
+d
+{1: 2, 2: 40, 'age': 21}
+-> get() method
+
+-> pop ()method
+key is passed
+d.pop(1)
+2
+d
+{2: 40, 'age': 21}
+
+
+
+
+
+
+
+
+
+
