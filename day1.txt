@@ -1,0 +1,188 @@
+Python is a high-level, interpreted, general-purpose programming language known for its simple syntax, readability, and wide range of applications. It is one of the most popular languages in the world today.
+Created by Guido van Rossum
+first he working for language abc which was understandable by all  then worked on this  
+First released in 1991 . started working in 1989
+in cib , netherland it was made
+Open-source and free to use
+first version : 0.9.0
+
+🔹 Key Features of Python
+Easy to learn & read (English-like syntax)
+Interpreted (no compilation needed)
+dynamically typed language eg: a=5
+Object-Oriented & Functional
+free nd open source
+Portable (runs on Windows, Linux, macOS)
+Huge standard library (>7 cr. libraries)
+Large community support
+
+usage :
+Web Development
+ 	Frameworks: Django, Flask, FastAPI
+Data Science & Analytics
+	NumPy, Pandas, Matplotlib
+Machine Learning & AI
+	TensorFlow, PyTorch, Scikit-learn
+Automation & Scripting
+	File handling, task automation
+Game Development
+	Pygame
+Cybersecurity & Networking
+Desktop & Mobile Applications
+
+
+NOTE :saari scripting lang. programming hoti h but not vice versa 
+NOTE : jo bhi interpreter use krte h vo scripting lang. hoti h
+
+idle only takes on eline code 
+u do not need to write print stmt in idle
+a=9
+a
+9
+
+LIBRARY VS FRAMEWORK VS MODULE
+framework is the broadest term . in this framework there are multiple libraries .in library there are multiple module , 
+module is basically a single file like in python one single .py file is module 
+ex: of framework : django 
+
+
+VARIABLE:
+CREATION:- 
+memory allocation 
+
+variable space / static area /stack mmry allocation  
+value area /dynamic /heap mmry allocation
+
+LIBRARY FUNCTION:-
+in 3 categories library functions are categorised :
+1. keyword 
+2. operators 
+3. in-built functions
+
+KEYWORDS : reserved word use only when u have to perform some task
+35 keywords in python
+to know which are keywords in idle python
+import keyword
+keyword.kwlist
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+these 35 words are k/as universal standard words b/c they have same meaning in every prog. language
+len(keyword.kwlist)
+35
+ 
+
+True , False and None has first letter capital and are special characters . except these 3 all other got executed 
+
+id - memory address of object , convert hexadecimal to integer address
+
+
+operators -7 different type
+shortcut -ALARM BI 
+arithmetic
+logical
+assignment
+relational
+membership operator
+bitwise
+identity operator
+
+
+IN-BUILT FUNCTION:
+a =5 then id of both value and variable will be same
+but if number > 256 then id of variable will be differ from id of value
+
+if no space in string then id of value and variable will be same
+if there is space then different id of both
+ex:
+
+name='akshita'
+id(name)
+2042511694064
+id('akshita')
+2042511694064
+whereas
+b="hi hello"
+id(b)
+2042511734832
+id("hi hello")
+2042511735600
+
+
+a=10 , b=10 then id(a) , id(b), id(10) all will be same
+a=10
+b=10
+id(a)
+140705033377176
+id(b)
+140705033377176
+id(10)
+140705033377176
+
+
+multiple variable creation:-
+var1 , var2 , var3 , ........., varn = val1 , val2, val3,....valn
+NOTE- NO OF VARIABLE SHOULD BE EQUAL TO NUMBER OF VALUEW 
+
+A,B,C=10,20,A
+Traceback (most recent call last):
+  File "<pyshell#37>", line 1, in <module>
+    A,B,C=10,20,A
+NameError: name 'A' is not defined. 
+THIS ERROR COMES BECAUSE THSI LINE DOES NOT EXECUTE AND A does not get exefcuted and stored
+
+p=1,2    //this is not a multiple variable creation
+type(a)
+<class 'int'>
+p
+(1, 2) 
+
+variables are also k/as identifier
+rules for variable creation:
+- must not be a keyword
+- not start with number
+- no special character except _
+- not have space either not in beginning nor in between
+- Variable Name Must Start With A letter (a–z / A–Z) or An underscore _
+- contains number , alphabet or underscore
+- case sensitive and can be comb of uppercase or lowercase
+- according to ISR(industrial standard rule) , variable name should be < 79 char  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
