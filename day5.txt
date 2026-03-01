@@ -1,0 +1,74 @@
+output stmt :
+print takes 3 argument  
+-> values 
+-> seperator like ' ' by default value of seperator is space ' '
+-> end argument : by default value is '\n'
+print(val,val2,...,valn , sep=' ', end='\n')
+eg: print(10,20,30,sep='#',end='@')  //10#20#30@
+
+
+imput:
+input() function takes input in form of string we need to change it to desired data type
+input("enter")
+eval() used with input() helps interpreter to directly change input into its data type
+
+a=int(input("enter"))
+print(a+500)
+or
+a=eval(input("enter"))
+print(a+500)
+
+
+a=list(input("enter"))
+print(a
+enter10,20,30
+['1', '0', ',', '2', '0', ',', '3', '0']
+
+a=eval(input("enter"))
+print(a)
+enter10,20,30
+[10, 20, 30]
+
+
+
+
+flow bdiagram 
+oval -> start/end
+parallelogram -> i/p or o/p
+rectangle -> show the process
+diamond -> conditionm /decision 
+arrow ->show flow 
+
+
+
+Q : take age as no. check if eligible for voting or not 
+
+
+looping stmt:
+2 loops in python:
+-> for  :does not require index
+syntax:
+for var in collection/sequence:
+	//code
+-> while  : can not use while with set and dict
+SYNTAX:
+ initialisation
+ while condition: 
+ 	//code
+ 	//inc/dec
+NOTE- THERE IS NO DO-WHILE IN PYTHON
+NOTE - chr() TO CONVERT ASCII TO CHAR
+
+
+formatting tag:
+syntax:
+print(f"    {value}")
+eg:
+print(n,'*',i,'=',n*i)
+print(f"{n}*{i}={n*i}) // using formatting tag
+
+
+range():
+ending value is always excluded 
+we can give step value in this also 
+range(start , end , step)
