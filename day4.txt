@@ -1,0 +1,147 @@
+copy operation:
+objective->to keep original and updated collection along with me
+in single valued and string it is not used bcz its objective is not fullfrileed there 
+tuple is immutable so it is not used there no objective is fullfilled 
+set m bhi nhi hota bcz duplicate value , list nhi rkh skta , indexing ,slicing nhi kr skta 
+dict m bhi nhi hota bcz hr bbar jrurui nhi adding key-value pair m kru soo
+all operations are performed in list so w use copy in list
+
+3 types:
+-> general/normal copy
+    syntax : new_var=old_var
+	variable space ka content copy hota h 
+	l=[10,20,30]
+	c=l
+	c
+	[10, 20, 30]
+	id(c)
+	2362815706560
+	id(l)
+	2362815706560
+note : objective is not fullfilled here so next type was introduced
+	c[2]=200
+	l
+	[10, 20, 200]
+-> shallow copy
+	syntax:new_var=old_var.copy()
+	copy the content of value space.
+	d=l.copy()
+	id(d)
+	2362815596672
+	d[2]=20
+	d
+	[10, 20, 20]
+	l
+	[10, 20, 200]
+it is not fullfilling the objective of nested part like nested list
+	l.append([2,34])
+	d=l.copy()
+	d
+	[10, 20, 20, [2, 34]]
+	d[3][0]=30
+	l
+	[10, 20, 20, [30, 34]] //d changed the value in original nested (l part nested)
+note: only fullfill objective for main values not for nested part
+-> deep copy
+	Creates a new object and recursively copies all objects found within the original.
+	The new object is entirely independent; changes to the copy do not affect the original.
+	yh jaha bhi tumne vo line of code pass kia h vha jakr uss value ko copy karega puri ko 
+	yha na hi value space copy hoga na variable space
+	syntax=
+	import copy 
+	new_var=copy.deepcopy(old_var)
+	import copy
+	e=copy.deepcopy(l)
+	e
+	[10, 20, 20, [30, 34]]
+	e[3][1]=3
+	e
+	[10, 20, 20, [30, 3]]
+	l
+	[10, 20, 20, [30, 34]]
+
+
+
+operators:
+->arithmetic:
++,-,*,/(gives in float),//(gives in int),%(givrs remainder),**(power)
+ precedence:complex,float ,int ,bool
+str is + to only str 
+tuple to tuple + only 
+set to set concatenate not possible bcz there is possiblilty of having same values in both values :causes data loss 
+list to list concatenate possble
+dict to dict concatenate not possible bcz there is possibilty of having same key in 2 dict :causes data loss
+- operator works only for single valued and set
+* int must be one operand ;set ,dict can not be one operand
+/ works only for all single valued
+// only int and float 
+** both operand must be int
+
+logical :
+firsrt check for default and non-default value 
+if default then false else true , checked using bool
+
+and:if op1 ==false then output op1
+10 and 40
+40
+0 and 20
+0
+or: if op1==true then output op1
+10 or 40
+10
+0 or 10
+10
+not :
+precedence : not , and , or
+
+
+assignment :
+ =,+= , -=,*=,/=,//=,%=,......
+
+relational :
+< ,> ,>=.<=,==,!=
+< ,> ,>=.<= not with complex , dict 
+NOTE : TO KNOW ASCII VALUE OF A CHAR WE USE ORD() FUNCTION
+ord('a')
+97
+'23'>'52'
+ascii of first char is compared : 50 (2) and 53(5) soo false returns
+if fist is same then move to second to compare
+this comparision is done same for multivalued 
+ in set where side is open mouth of <or> which is considered as superset
+{10,20,30,40}>{10,20} -> true first one is superset
+{10,20,30,40}<{10,20} -> false first one is subset
+(1+0j)==1
+True
+in singlevalued , == only checks value whereas in multivalued it checks both value and data type 
+for set for == order does not matter 
+		q
+
+membership : check if operand 1 is present in operand2
+in , not in
+
+identity operator :check the id 
+is , is not
+a=10
+b=10
+a is b
+True
+
+bitwise operator:
+bin() function convert to binary
+
+
+control statement :control flow of execution
+-> conditional / decesional control stmt
+-> loop 
+
+conditional stmt 
+->simple if
+-> if-else
+-> elif
+-> nested if_else
+ syntax:
+if condition :
+	//true stmt block
+else:
+	//false stmt block
