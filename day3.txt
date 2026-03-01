@@ -1,0 +1,96 @@
+slicing :
+used to extract a part of collection datatype 
+syntax: var[start:end:step]
+end is always excluded
++/- 1 is passed with end depending on condition
+left to right then +1 and right to left -1
+if u want to go till end of collection then u can skip end value and same for start
+s[2: :1]//till end
+s[ :4:1]//from start
+if step value is 1 then u can skip it also 
+-1 step for reverse
+s[: :-1]
+
+
+
+
+type-casting:
+dest_var=dest_type(source_var)
+all single valued datatype can be only converted to only one multivalued that is string
+
+when int is converted to string there is memory loss bcz memory layer is built
+float to int in this data loss wew will face
+complex can not be casted into int and float .it can only be casted into only bool and str
+
+for string:
+s='akshita'
+a=list(s)
+a
+['a', 'k', 's', 'h', 'i', 't', 'a']
+a=tuple(s)
+a
+('a', 'k', 's', 'h', 'i', 't', 'a')
+a=set(s)
+a
+{'k', 'h', 's', 'a', 't', 'i'}
+a=dict(s)
+Traceback (most recent call last):
+  File "<pyshell#41>", line 1, in <module>
+    a=dict(s)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+s='1234'
+a=int(s)
+a
+1234
+s='90.9'
+a=int(s)
+Traceback (most recent call last):
+  File "<pyshell#46>", line 1, in <module>
+    a=int(s)
+ValueError: invalid literal for int() with base 10: '90.9'
+a=complex(s)
+a
+(90.9+0j)
+
+list can only be casted into bool from single valued 
+LIST to dictionary :condition :
+-> all values of list must be multivalued
+-> length of those values must be 2 
+d=[[1,2],{11,2},'hi','to']
+dict(d)
+{1: 2, 2: 11, 'h': 'i', 't': 'o'} //here {2,11} is unordered so it can takje any as key 
+
+
+tuple can also be in only bool from single valued 
+and in all of multivalued , for dict it is  same as of list 
+in dict only single value is bool
+d={'name':'akshita','age':21,'dob':'07-08-2003'}
+list(d)
+['name', 'age', 'dob']
+str(d)
+"{'name': 'akshita', 'age': 21, 'dob': '07-08-2003'}"
+tuple(d)
+('name', 'age', 'dob')
+set(d)
+{'name', 'dob', 'age'}
+to get botth key value we can use item()
+list(d.items())
+[('name', 'akshita'), ('age', 21), ('dob', '07-08-2003')] 
+to get values only values()
+to get key keys()
+
+
+copy operation:
+objective->to keep original and updated collection along with me
+in single valued and string it is not used bcz its objective is not fullfrileed there 
+tuple is immutable so it is not used there no objective is fullfilled 
+set m bhi nhi hota bcz duplicate value , list nhi rkh skta , indexing ,slicing nhi kr skta 
+dict m bhi nhi hota bcz hr bbar jrurui nhi adding key-value pair m kru soo
+all operations are performed in list so w use copy in list
+3 types:
+-> general/normal copy
+    new_var=old_var
+	variable space ka content copy hota h 
+-> shallow copy
+-> deep copy
+mostly used in list datatype
