@@ -1,0 +1,39 @@
+pattern printing : 
+for pattern printing we use matrix 
+we will use nested for loop 
+first loop will represent row and second nested will represent columns 
+
+
+
+pattern printing
+for i in range(1,4):
+    for j in range(1,4):
+        print('*')        // this will give output in vertical way all 8 * will be vertical
+        //so to solve this we need to add end
+
+for i in range(1,4):
+    for j in range(1,4):
+        print('*',end=' ')  //now only passing end will print all 8 * in same line 
+# so to solve this we need to pass print() after every row
+
+
+for i in range(1,4):
+    for j in range(1,4):
+        print('*',end=" ")
+    print()    //this will print perfectly
+
+
+we have 2 diagonal in matrix:
+diagonal from left to right is primary diagonal
+for primary diagonal i==j is condition 
+for lower triangle wrt to primary diagonal i>j
+for upper triangle wrt to primary diagonal i<j
+
+diagonal from right to left is secondary diagonal
+for secondary diagonal i+j==row+1  //if index is from 1
+for secondary diagonal i+j==row-1  //if index is from 0
+for lower triangle wrt to sec diagonal i+j>row +1 //in case of indexing from 1
+for upper triangle wrt to sec diagonal i+j<row+1  //in case of indexing from 1
+
+
+
