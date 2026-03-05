@@ -135,4 +135,89 @@
 
 
 # functions:
-print(dir(tuple))
+ 
+#  task 10:create a function which takes 2 values as input and return their product
+
+#  no argument ,no return 
+# def prod():
+#     a=int(input("enter a:"))
+#     b=int(input("enter b:"))
+#     print(a*b)
+# prod()
+
+# with argument and no return 
+# a=int(input("enter a:"))
+# b=int(input("enter b:"))
+# def prod(a,b):
+#     print(a*b)
+# prod(a,b)  //if we have values
+# prod(int(input()),int(input()))
+
+# without argument and with return
+# def prod():
+#     a=int(input("enter a:"))
+#     b=int(input("enter b:"))
+#     return a*b
+# print(prod())
+
+
+# with argument and with return 
+# a=int(input("enter a:"))
+# b=int(input("enter b:"))
+# def prod(a,b):
+#     return a*b
+# print(prod(a,b))
+
+
+# def prod():
+#     a=int(input("enter a:"))
+#     b=int(input("enter b:"))
+#     print(a*b)
+#     # return
+# print(prod())       
+# //if we pass function in print and return has no value with it then none will also come in output
+# whenever we pass only function to print then also none will come 
+# return k sath value hoti h tb none nhi aaega print m call k baad bhui 
+
+
+# task 11 : to return negative values from list using function
+# l=eval(input("input the list"))
+# def neg(l):
+#     a=[]
+#     for i in l:
+#         if i <0:
+#             a.append(i)
+#     return a
+# print(neg(l))
+
+
+# task 12 : local scope vs global scope 
+# a=10
+# def b():
+#     a=15
+#     print(a)
+# print(b())
+# print(a)       // now value will be not beupdated to 15  
+
+
+# a=10
+# def b():
+#     global a
+#     a=15
+#     print(a)
+# print(b())
+# print(a)       // now value will be updated to 15 bcz global a is used in function 
+
+
+a=9
+def f1():
+    global a
+    a=20
+    b=2000
+    def f2():
+        nonlocal b    
+        # we can access b in nested function but not change it so to change we use nonlocal keyword 
+        # nonlocal b will be used to change value of variable of function into nested function 
+        b=2
+    print(b)
+print(a)
