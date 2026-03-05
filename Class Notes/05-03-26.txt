@@ -37,3 +37,51 @@ for upper triangle wrt to sec diagonal i+j<row+1  //in case of indexing from 1
 
 
 
+
+
+functions:
+used to remove redundancy 
+like len , type , id , bool , max , min , sum
+ 
+2 types:
+-> predefined /inbuilt functions
+defined by developer
+types of inbuilt:
+:- utility inbuilt function : which we can use with all datatype like id , type
+:- string inbuilt functionm : islower , isupper , swapcase , replace , capitalise , join , index , split , count , lower , upeer , isnumeric , rstrip , strip , lstrip , etc
+:- list inbuilt function : append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort
+:- tuple inbuilt function: count , index
+:- set inbuilt function:add , union , difference , clear , remove , update
+:- dictionary inbuilt function:keys, values, get ,items, getpopitem,pop , clear,update
+
+-> user-defined functions:
+def keyword is used 
+def fun_name(arguments):
+	//stmt block
+
+4 types:
+:- function with argument and no return 
+:- function with argument and with return
+:- function without argument and no return 
+:- function without argument and with return  
+
+formal argument /parameters : during function declaration 
+actual argument : during function calling 
+
+memory allocation of function:
+
+	 variabe|  value space
+		|
+    name<-|ox90||  |--------------| -> method block or method area or function block
+	  	|  | method block |  it has the stmt block of function including return 
+		|  |______________|
+			\
+		       0x90
+
+global variable:
+global scope 
+
+
+local variable:
+local scope
+
