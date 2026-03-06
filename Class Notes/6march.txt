@@ -1,0 +1,45 @@
+return is like a break in loops .return will stop execution of function and value passed with return
+act as output of function .it does not print output it only return it as output   
+
+global variable vs local variable:-
+
+memory allocation of local variable will be in function block whereas memory allocation of 
+global variable will be in value space .
+Global variables are declared outside of all functions and are accessible throughout the entire program
+local variables are declared inside a specific function or block and can only be accessed within that limited scope
+
+in nested function the nested function is inner scope and outer function is outer scope
+
+global keyword is used to apply changes to global variable in loc al scope
+nonlocal keyword is used to change the outer scope variable in inner scope
+
+packing and unpacking :
+
+packing :
+phenomenon of groping variable together
+interpreter will only pack tuple and dictionary.
+manually we can pack in any multivalued but interpreter will pack in only tuple and dictionary.
+suppose we want to pass value of tuple in function call but interpreter wont understand it is a tuple
+so for this we use packing concept
+allows us to handle variable-length arguments efficiently. 
+This feature is useful when we don’t know beforehand how many arguments will be passed to a function. 
+
+2 types:
+-> single or tuple packing 
+    The * operator allows us to pass multiple arguments to a function and pack them into a tuple.
+    The function takes any number of arguments.
+    The *argument packs all arguments into a tuple.
+-> double otr dictionary packing 
+    ** operator is used to collect multiple keyword arguments into a dictionary.
+    **kwargs collects keyword arguments as a dictionary.
+    Each key-value pair is stored in kwargs
+    kwargs=keyword argument
+    in this we can not pass only number as key because the key created here will be variable
+    and follow the 6 rules of identifier initialisation
+
+
+
+
+
+
+
