@@ -37,6 +37,17 @@ This feature is useful when we don’t know beforehand how many arguments will b
     in this we can not pass only number as key because the key created here will be variable
     and follow the 6 rules of identifier initialisation
 
+unpacking:
+
+Unpacking allows values from an iterable (list, tuple, or dictionary) to be passed as separate arguments to a function.
+
+1. Unpacking a List/Tuple with *:
+We use * to unpack elements from a list/tuple.
+* is used with variable during function call
+
+2. Unpacking a Dictionary with **
+We use ** to unpack key-value pairs from a dictionary.
+** is used with var during function call
 
 
 
