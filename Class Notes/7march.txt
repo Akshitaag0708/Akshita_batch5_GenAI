@@ -61,3 +61,7 @@ import sys
 sys.setrecursionlimit(5000)  -> instead of 5000 u can provide ur desired value 
 
 like till fact of 1500 we need to set limit to 2000
+
+----------------------------------------------------------------------
+OBJECT ORIENTED PROGRAMMING :
+-> to give ordered structure till now there is no structure 
