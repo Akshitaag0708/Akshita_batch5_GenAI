@@ -1,0 +1,63 @@
+Types of argument:
+-> Positional arguments
+values that we pass to a function in a specific order. 
+The order in which we pass the arguments matters.
+-> Default argument
+passed during function declaration 
+parameter that have a predefined value if no value is passed during the function call.
+should be placed at last
+-> Keyword arguments (named arguments)
+passed by naming the parameters when calling the function.
+This lets us provide the arguments in any order, making the code more readable and flexible.
+-> variable length argument / Arbitrary arguments (variable-length arguments *args and **kwargs)
+allow us to pass a number of arguments to a function.
+This is useful when we don't know in advance how many arguments we will need to pass.
+*args in Python (Non-Keyword Arguments): Collects extra positional arguments passed to a function into a tuple.
+**kwargs in Python (Keyword Arguments): Collects extra keyword arguments passed to a function into a dictionary.
+
+
+***Note : first positional argument are placed and in last default arguments are passed
+
+----------------------------------------------------------------------------
+
+Recursion:
+calling a function inside itself
+base condition is passed to stop it from going into infinite loop
+
+memory allocation:
+taking example of factorial 5: 
+        |        n=5
+        |    ______________
+        |   |              |===5*f(5-1)and f(5-1)=24
+        |   |rtrn n*f(n-1) |        ||
+        |   |______________|        120
+        |
+        |   n=4
+        |    ______________
+        |   |              |===4*f(4-1)and f(4-1)=6
+        |   |rtrn n*f(n-1) |        ||
+        |   |______________|        24
+        |       n=3
+        |     ______________
+        |   |              |===3*f(3-1)and f(3-1)=2
+        |   |rtrn n*f(n-1) |        ||
+        |   |______________|         6
+        |       n=2
+        |     ______________
+        |   |              | ===2*f(2-1)and f(2-1)=1
+        |   |rtrn n*f(n-1) |        ||
+        |   |______________|        2
+        |        n=1
+        |    ______________
+        |   |              |-> function block 
+        |   |rtrn n*f(n-1) |
+        |   |______________|    ====1
+
+
+*note : every python version has limited recursion limit means how many these recursion block can be made
+
+we can increase its limit by updating version or via importing systen
+import sys
+sys.setrecursionlimit(5000)  -> instead of 5000 u can provide ur desired value 
+
+like till fact of 1500 we need to set limit to 2000

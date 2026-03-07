@@ -123,7 +123,7 @@
 
 # -----------------------------------------------------------------------
 
-# unpacking of tuple
+# unpacking of tuple , list , string 
 # def addition(a, b, c):
 #     return a + b + c
 # num = (1, 5, 10)  
@@ -134,6 +134,10 @@
 #     print(a,b,c,d)
 # s='wxyz'
 # p(*s)       #o/p = w x y z   ,here every index element of string is assigned with a , b , c , ressp.
+# p(*[1,2,3,4])   #o/p=1 2 3 4
+# p(*{1,2,3,4})   #o/p= 1 2 3 4
+
+
 # --------------------------------------------------------------------------
 
 # unpacking of dictionary
