@@ -1,0 +1,54 @@
+OOPs
+
+memory allocation:
+
+variable            value space                                               reference that interpreter made internally
+_____________________________________________________________           ________________
+           |    key layer     value layer                   |           |        |      |
+  College  |    ____________________________________________|           |c_name  | a1   |
+  _______  |   |attribute   |multivalued so only location   |           |        |      |
+ |0x55   | |   |names ex:   | of that block stores here     |           |loc     |a2    |
+ |       | | a1|c_name      | 0x89                          |           |        |      |
+           | a2|loc         | 0x99                          |           |name    |0x78  |
+           |   |            |                               |           |        |      |
+           |    key layer address is 0x55
+           |    a1 and a2 are references (reference address)of attribute 
+
+
+
+constructor:
+init method is used 
+first argument is used to store location of object
+according to industrial rule it is supposed to pass first argument of init as self
+NOTE- koi bhi function ko class m likhenge toh vo method hga 
+NOTE=class k through keval class ke attribute fetch kr skte h or object k through dono class and object k attribute fetch kr skte h 
+for any class method u want obj to access then pass self as argument
+
+
+NOTE:-init method can be called as object method .it is not but can be called as . 
+types of method:
+->class method:
+called through object as well as class name . any u can use 
+can be accessed via class only
+They are defined using the @classmethod decorator and take the class itself as the first parameter
+useful for tasks that involve the class rather than the instance, such as creating class-specific behaviors or modifying class-level attributes.
+first argument will be cls according to industrial standard rule
+
+->object method :
+A method defined within a class, taking `self` as the first parameter, representing the instance.
+This allows the method to access and manipulate the instance's attributes.
+can access both object and class properties
+
+note : difference between class method and object method is if u want to change class property via object method then it will be changed for that object only but if you change it via class method it will be changed for all object
+
+->static method:
+not bound to either the class or its instances. 
+They are defined using the @staticmethod decorator and do not take a reference to the instance or the class as their first parameter.
+useful for tasks that do not depend on instance-specific or class-specific data.
+Cannot access or modify class or instance attributes.
+
+4 pillars of OOPs
+-> Abstraction : to hide something 
+-> Encapsulation
+-> Inheritance
+-> Polymorphism
