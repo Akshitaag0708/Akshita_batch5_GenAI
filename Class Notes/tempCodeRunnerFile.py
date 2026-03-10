@@ -1,5 +1,13 @@
-a=int(input("enter a:"))
-# b=int(input("enter b:"))
-# def prod(a,b):
-#     return a*b
-# print(prod(a,b))
+class Animal:
+#     def sound(self):
+#         return "Some generic sound"
+# class Dog(Animal):
+#     def sound(self):
+#         return "Bark"
+# class Cat(Animal):
+#     def sound(self):
+#         return "Meow"
+
+# animals = [Dog(), Cat(), Animal()]
+# for animal in animals:
+#     print(animal.sound())
