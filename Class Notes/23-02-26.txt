@@ -34,7 +34,7 @@ Desktop & Mobile Applications
 NOTE :saari scripting lang. programming hoti h but not vice versa 
 NOTE : jo bhi interpreter use krte h vo scripting lang. hoti h
 
-idle only takes on eline code 
+idle only takes oneline code 
 u do not need to write print stmt in idle
 a=9
 a
@@ -145,44 +145,4 @@ rules for variable creation:
 - contains number , alphabet or underscore
 - case sensitive and can be comb of uppercase or lowercase
 - according to ISR(industrial standard rule) , variable name should be < 79 char  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
